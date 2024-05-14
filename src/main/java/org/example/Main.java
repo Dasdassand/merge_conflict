@@ -15,6 +15,11 @@ public class Main {
 
     public static List<Long> getDel(long d) {
         List<Long> list = new LinkedList<>();
+        int j = 0;
+        while (j < 10) {
+            list.add((long) j);
+            j++;
+        }
         for (long i = 1; i < d; i++) {
             if (d % i == 0) {
                 list.add(i);
@@ -25,5 +30,9 @@ public class Main {
 }
 
 /**
-
+ * for (long i = 1; i < d; i++) {
+ *             if (d % i == 0) {
+ *                 list.add(i);
+ *             }
+ *         }
  */
