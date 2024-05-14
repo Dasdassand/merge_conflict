@@ -15,15 +15,11 @@ public class Main {
 
     public static List<Long> getDel(long d) {
         List<Long> list = new LinkedList<>();
-
+        int i = 0;
+        while (i < 10) {
+            list.add((long) i);
+            i++;
+        }
         return list;
     }
 }
-
-/**
- * for (long i = 1; i < d; i++) {
- *             if (d % i == 0) {
- *                 list.add(i);
- *             }
- *         }
- */
